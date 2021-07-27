@@ -39,9 +39,9 @@
         <div class="collapse navbar-collapse" id="sbNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-info fa-lg"></i> About</a></li>
                 <li class="nav-item"><a class="nav-link" href="destinations.html"><i class="fa fa-list fa-lg"></i> Destinations</a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
             </ul>
         </div>
     </div>
@@ -49,11 +49,122 @@
   <!-- ./nav -->
 
   <!-- main -->
-  <main class="container">
+  <main class="home-container">
     
     <div class="row page">
-      <div class="col-md-6">
-        Home page add stuff here
+      <div class="home-col">
+        
+        <div class="sscontainer">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img class="ssimg" src="img/img_woods_wide.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img class="ssimg" src="img/img_5terre_wide.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img class="ssimg" src="img/img_mountains_wide.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img class="ssimg" src="img/img_lights_wide.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img class="ssimg" src="img/img_nature_wide.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img class="ssimg" src="img/img_snow_wide.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="ssrow">
+            <div class="sscolumn">
+              <img class="demo cursor" src="img/img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="sscolumn">
+              <img class="demo cursor" src="img/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="sscolumn">
+              <img class="demo cursor" src="img/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="sscolumn">
+              <img class="demo cursor" src="img/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="sscolumn">
+              <img class="demo cursor" src="img/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>    
+            <div class="sscolumn">
+              <img class="demo cursor" src="img/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+          </div>
+        </div>
+        <div class="home-col row row-content">
+          <div class="col-12">
+              <h2>Pick your next adventure!</h2>
+              <hr/>
+          </div>
+          <div class="col-md-10">
+              <form class="adform">
+                  <div class="form-group col-md-6">
+                      <label for="destination" class="col-md-2 col-form-label">Destination</label>
+                      <div class="col-md-10">
+                          <select class="form-control" id="destination" name="destination" placeholder="Destination">
+                            <option value="0">Select...</option> 
+                            <option value="1">Desolation Canyon</option> 
+                            <option value="2">Gates of Lodore</option> 
+                            <option value="3">Yampa Canyon</option>
+                            <option value="4">Grand Canyon</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="destination" class="col-md-2 col-form-label">Destination</label>
+                    <div class="col-md-10">
+                        <select class="form-control" id="destination" name="destination" placeholder="Destination">
+                          <option value="0">Select...</option> 
+                          <option value="1">Desolation Canyon</option> 
+                          <option value="2">Gates of Lodore</option> 
+                          <option value="3">Yampa Canyon</option>
+                          <option value="4">Grand Canyon</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="destination" class="col-md-2 col-form-label">Destination</label>
+                  <div class="col-md-10">
+                      <select class="form-control" id="destination" name="destination" placeholder="Destination">
+                        <option value="0">Select...</option> 
+                        <option value="1">Desolation Canyon</option> 
+                        <option value="2">Gates of Lodore</option> 
+                        <option value="3">Yampa Canyon</option>
+                        <option value="4">Grand Canyon</option>
+                      </select>
+                  </div>
+              </div>
+      
+                  <div class="form-group row">
+                      <div class="offset-md-2 col-md-10">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+     </div>
       </div>
     </div>
   </main>
@@ -63,13 +174,12 @@
   <footer class="site-footer">
     <div class="container">
         <div class="row">
-            <div class="madeby row" id="bottom">
-                <p>SBRafting - Made by [Thomas Lindsey]</p>
-            </div>
             <div class="col 4 col sm 2 offset 1">
               <h5>Links</h5>
               <ul class="list unstyled">
                 <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
             <div class="col 6 col sm 5 text center">
@@ -81,9 +191,12 @@
             </div>
             <div class="col sm 4 test center">
               <a role="button" class="btn btn-link" href="tel:5558675309"><i class="fa fa-phone"></i> 1-555-867-5309</a><br>
-              <a role="button" class="btn btn-link" href="mailto:opencases@SBRafting.com"><i class="fa fa-envelope-o"></i> opencases@SBRafting.com</a>
+              <a role="button" class="btn btn-link" href="mailto:oarsup@SBRafting.com"><i class="fa fa-envelope-o"></i> oarsup@SBRafting.com</a>
             </div>
         </div>
+        <div class="madeby row" id="bottom">
+          <p>SBRafting - Made by [Thomas Lindsey]</p>
+      </div>
       </div>
   </footer>
   <!-- ./footer -->
@@ -101,6 +214,36 @@
         console.log(data);
       })
     }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+      
   </script>
   
 </body>
