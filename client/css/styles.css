@@ -67,6 +67,12 @@ header h2 {
 
 .ssimg {
   vertical-align: middle;
+  max-height: 400px;
+}
+
+.btnStyle {
+  width: 120px;
+  margin: 34px 0px 0px 100px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -153,10 +159,18 @@ header h2 {
 }
 
 .home-col {
-  margin: 0 15px 0 15px;
+  margin: 0;
 }
 
 .adform {
   display: inline-flex;
+  max-width: 60%;
+}
+
+@media(max-width: 600px) {
+  .adform {
+    max-width: 60%;
+    display: block;
+  }
 }
 
