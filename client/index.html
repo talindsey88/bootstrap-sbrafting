@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>SBRafting</title>
+  <link rel="shortcut icon" href="img/logo.jpg" type="image/jpg">
   <!-- Required meta tags always come first -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,7 +40,15 @@
         <div class="collapse navbar-collapse" id="sbNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="destinations.html"><i class="fa fa-list fa-lg"></i> Destinations</a></li>
+                <li class="dropdown nav-item">
+                  <a class="nav-link dropbtn" href="destinations.html"><i class="fa fa-list fa-lg"></i> Destinations<i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="grandCanyon.html">Grand Canyon</a>
+                    <a href="desolationGrey.html">Desolation Grey</a>
+                    <a href="yampa.html">Yampa</a>
+                    <a href="gatesOfLodore.html">Gates of Lodore</a>
+                  </div>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info fa-lg"></i> About</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
             </ul>
@@ -67,12 +76,12 @@
         
           <div class="mySlides">
             <div class="numbertext">3 / 6</div>
-            <img class="ssimg" src="img/img_grand-lilc.jpg" style="width:100%">
+            <img class="ssimg" src="img/img_grand_lilc_wide.jpg" style="width:100%">
           </div>
             
           <div class="mySlides">
             <div class="numbertext">4 / 6</div>
-            <img class="ssimg" src="img/img_yampa.jpg" style="width:100%">
+            <img class="ssimg" src="img/img_yampa_wide.jpg" style="width:100%">
           </div>
         
           <div class="mySlides">
@@ -82,7 +91,7 @@
             
           <div class="mySlides">
             <div class="numbertext">6 / 6</div>
-            <img class="ssimg" src="img/img_redwall.jpg" style="width:100%">
+            <img class="ssimg" src="img/img_yampa_over_wide.jpg" style="width:100%">
           </div>
             
           <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -100,7 +109,7 @@
               <img class="demo cursor" src="img/img_grand.jpg" style="width:100%" onclick="currentSlide(2)" alt="Grand Canyon">
             </div>
             <div class="sscolumn">
-              <img class="demo cursor" src="img/img_grand-lilc.jpg" style="width:100%" onclick="currentSlide(3)" alt="Grand/Little Colorado">
+              <img class="demo cursor" src="img/img_grand_lilc.jpg" style="width:100%" onclick="currentSlide(3)" alt="Grand/Little Colorado">
             </div>
             <div class="sscolumn">
               <img class="demo cursor" src="img/img_yampa.jpg" style="width:100%" onclick="currentSlide(4)" alt="Yampa Canyon">
@@ -109,7 +118,7 @@
               <img class="demo cursor" src="img/img_gates.jpg" style="width:100%" onclick="currentSlide(5)" alt="Gates of Lodore">
             </div>    
             <div class="sscolumn">
-              <img class="demo cursor" src="img/img_redwall.jpg" style="width:100%" onclick="currentSlide(6)" alt="Red Wall Cavern">
+              <img class="demo cursor" src="img/img_yampa_over.jpg" style="width:100%" onclick="currentSlide(6)" alt="Red Wall Cavern">
             </div>
           </div>
         </div>
