@@ -58,9 +58,56 @@
 
   <!-- main -->
   <main class="container">
-    <div class="row homepage">
-      <div class="col-md-3">
-        Gates of Lodore Page add stuff here
+    <div>
+      <div>
+        <div class="col">
+          <h2 class="text-sm-center">Grand Canyon</h2>
+        </div>
+        <div class="media dsummary">
+          <img class= "d-flex mr-3 img-thumbnail d2img" src="img/img_grand_havasu.jpg" alt="Breadcrumb Trail thumbnail"/>
+          <div class="media-body">
+            <div class="row row-content">
+              <div class="col-sm-9">
+                  <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                            <tr class="bg-primary text-light">
+                                <th></th>
+                                <th></th>
+                                <!-- 
+                                <th></th>
+                                <th></th>
+                                -->
+                            </tr>
+                        </thead>
+                        <tbody class="table-primary">
+                            <tr>
+                              <th>Difficulty</th>
+                              <td>V</td>
+                              <!--
+                              <td></td>
+                              <td></td>
+                               -->
+                            </tr>
+                            <tr>
+                              <th>Duration</th>
+                              <td>14-21 Days</td>
+                              <!--
+                              <td></td>
+                              <td></td>
+                               -->
+                            </tr>
+                        </tbody>
+                      </table>
+                  </div>
+              </div>
+              <p class="d-sm-block">Summary goes here a;lskdjf;alskdjf;lalskdjf;lalskjdf;laskjdf;alskdjfa;sldkfj</p>
+            </div>
+            <div class="float-right">
+              <button type="submit" onclick="onSubmit()" class="btn btn-primary">Contact Us</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -99,5 +146,11 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    function onSubmit() {
+     console.log(window.location.href);
+     window.location.href = window.location.origin + "/contact.html";
+    }
+  </script>
 </body>
 </html>

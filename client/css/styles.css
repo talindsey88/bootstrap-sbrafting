@@ -167,6 +167,12 @@ header h2 {
   }
 }
 
+@media(max-width: 800px) {
+  .dsummary {
+    display: block;
+  }
+}
+
 .dropdown {
   float: left;
 }
@@ -224,4 +230,8 @@ header h2 {
 .card-custom {
   border-radius: 10%;
   background-color:rgb(223, 215, 215);
+}
+
+.d2img {
+ max-height: 600px;
 }
